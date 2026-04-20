@@ -2,21 +2,29 @@
 <html lang="ru">
     <head>
         <title>Ресторан</title>
-        <link rel="stylesheet" type="text/css" href="/style/fonts.css" />
-        <link rel="stylesheet" type="text/css" href="/style/colors.css" />
-        <link rel="stylesheet" type="text/css" href="/style/common.css" />
-        <link rel="stylesheet" type="text/css" href="/style/contact.css" />
+        <link rel="stylesheet" type="text/css" href="style/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="style/colors.css" />
+        <link rel="stylesheet" type="text/css" href="style/common.css" />
+        <link rel="stylesheet" type="text/css" href="style/contact.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Уютный ресторан с изысканной кухней и лучшим сервисом в городе.">
+        <meta name="keywords" content="ресторан, меню, бронирование, вкусная еда, ужин">
+
     </head>
     <body>
-        <nav>
-            <h1 id="title">Эклектика</h1>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="menu/index.html">Меню</a></li>
-                <li><a href="contact/index.html">Контакты</a></li>
-            </ul>
-        </nav>
-        <div class="container">
+        <div class="container hero-section">
+            <nav>
+                <h1 id="title">ЭКЛЕКТИКА</h1>
+                <input id="checkbox_menu" type="checkbox">
+                <label for="checkbox_menu"><img src="assets/gallery/menu.png"></label>
+                <div id="menu-container">
+                    <ul>
+                        <li><a class="nav-link active">Главная</a></li>
+                        <li><a class="nav-link" href="menu/index.html">Меню</a></li>
+                        <li><a class="nav-link" href="contact/index.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </body>
 </html>
