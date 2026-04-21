@@ -29,7 +29,7 @@ nav > h1 {
 #menu-container > ul {
     list-style: none;
     display: flex;
-    gap: 80px;
+    gap: 79px;
 }
 
 .nav-link{
@@ -43,12 +43,38 @@ nav > h1 {
     color: #9E9E9E;
 }
 
-#checkbox_menu{
+#checkbox-menu, #menu-container-phone{
     display: none;
 }
 
-label[for="checkbox_menu"]{
+label[for="checkbox-menu"]{
     display: none;
+}
+
+#menu-container-phone{
+    width: 198px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+}
+
+#menu-container-phone > ul {
+    list-style: none;
+    margin-top: 112px;
+    margin-left: 29px;
+    display: flex;
+    flex-direction: column;
+    gap: 30.5px;
+}
+
+#menu-icon-img{
+    position: absolute;
+    width: 22px;
+    height: auto;
+    top: 26px;
+    right: 30px;
 }
 
 @media (max-width: 768px) {
@@ -56,7 +82,11 @@ label[for="checkbox_menu"]{
         display: none;
     }
 
-    label[for="checkbox_menu"]{
+    .cross-icon{
+        display: none;
+    }
+
+    label.menu-icon {
         display: block;
     }
 
@@ -65,15 +95,23 @@ label[for="checkbox_menu"]{
     }
 
     nav{
-        height: 65px;
+        height: 65px!important;
     }
 
-    label[for="checkbox_menu"] > img{
+    label[for="checkbox-menu"] > img{
         height: 25px;
     }
 
-    #checkbox_menu:checked ~ #menu-container {
+    #checkbox-menu:checked ~ #menu-container-phone {
+        display: block;   
+    }
+
+    #checkbox-menu:checked ~ .cross-icon {
         display: block;
-        
+        position: fixed;
+        height: 15.56px;
+        right: 33.44px;
+        top: 25px;
+        z-index: 10001;
     }
 }
