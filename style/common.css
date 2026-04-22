@@ -77,6 +77,8 @@ label[for="checkbox-menu"]{
     height: 36px;
 }
 
+/* --------------------------------- */
+
 @media (max-width: 768px) {
     #menu-container {
         display: none;

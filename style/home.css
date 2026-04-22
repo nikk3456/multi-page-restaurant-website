@@ -1,0 +1,17 @@
+#intro{
+    background-image: url("../assets/img/home-bckg.png");
+    background-color: rgb(0,0,0,0.6);
+    margin-top: -111px;
+    height: 910px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#intro > h1{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Bona Nova", serif;
+    font-weight: 400;
+    font-size: 96px;
+}
