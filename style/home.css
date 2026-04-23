@@ -46,8 +46,9 @@
 }
 
 #photo-gallery > img{
+    height: 100%;
     max-width: 100%;
-    height: auto;
+    object-fit: cover;
 }
 
 #text-gallery{
@@ -76,7 +77,9 @@
 }
 
 #arrows{
-    margin-top: 58px;
+    position: absolute;
+    top: 1570px;
+    right: 640px;
     display: flex;
     gap: 50px; 
 }
@@ -85,6 +88,68 @@
     transform: rotate(180deg);
 }
 
+#main-photo, #main-title, #main-text {
+    transition: opacity 0.5s ease;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+/* ----------------reviews----------------- */
+
+#reviews-section{
+    height: 650px;
+    background-image: url("../assets/img/page-bckg.png");
+    padding: 93px 136px 165px 136px;
+}
+
+#reviews-line{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+#reviews-section-content > h2{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Bona Nova", serif;
+    color: #FFFFFF;
+    margin-left: 141px;
+    margin-bottom: 35px;
+}
+
+.reviews-rectangle{
+    background-color: #FFFFFF;
+    height: 319px;
+    width: 675px;
+    display: flex;
+    gap: 30px;
+    padding: 31px 55px 53px 27px;
+}
+
+#right-arrow-reviews {
+    transform: rotate(180deg);
+}
+
+#reviews-avatar{
+    width: 104px;
+    height: 104px;
+    border-radius: 55px;
+}
+
+.reviews-rectangle-title{
+    display: flex;
+    margin-bottom: 33px;
+    justify-content: space-between;
+}
+
+.reviews-rectangle-title > h3 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+}
 
 /* ----------------media----------------- */
 
@@ -126,4 +191,46 @@
         font-weight: 500;
         margin-top: 20px;
     }
+
+    #gallery{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #photo-gallery, #text-gallery{
+        width: 100%;
+    }
+
+    #photo-gallery{
+        height: 265px;
+    }
+
+    #text-gallery-items{
+        height: 500px;
+        margin: 22px 30px 49px 29px;
+        width: auto;
+    }
+
+    #text-gallery-items > h2{
+        font-size: 28px;
+    }
+
+    #text-gallery-items > p{
+        margin-top: 20px;
+    }
+
+    #arrows{
+        position: absolute;
+        top: 725px;
+        left: 140px;
+        gap: 12px;
+    }
+    
+    #right-arrow, #left-arrow{
+        background-color: rgb(205, 205, 205, 0.3);
+        border-radius: 12px;
+        height: 35px;
+        padding: 6px 9px;
+    }
+
 }

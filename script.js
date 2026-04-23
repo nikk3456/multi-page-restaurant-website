@@ -4,6 +4,8 @@ const mainPhoto = document.getElementById('main-photo');
 const leftArrow = document.getElementById('left-arrow');
 const rightArrow = document.getElementById('right-arrow');
 
+
+
 const dataGallery = [
     {
         img: 'assets/gallery/gallery_about.png',
@@ -18,11 +20,22 @@ const dataGallery = [
 ];
 
 let index = 0;
-function updateContent(index, dataGallery){
-    let currentData = dataGallery[index];
-    mainPhoto.src = currentData.img;
-    mainTitle.innerHTML = currentData.title;
-    mainText.innerHTML = currentData.text;
+
+function updateContent(index, dataGallery) {
+    mainPhoto.classList.add('hidden');
+    mainTitle.classList.add('hidden');
+    mainText.classList.add('hidden');
+
+    setTimeout(() => {
+        let currentData = dataGallery[index];
+        mainPhoto.src = currentData.img;
+        mainTitle.innerHTML = currentData.title;
+        mainText.innerHTML = currentData.text;
+
+        mainPhoto.classList.remove('hidden');
+        mainTitle.classList.remove('hidden');
+        mainText.classList.remove('hidden');
+    }, 500);
 }
 
 rightArrow.onclick = function(){
