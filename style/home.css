@@ -2,7 +2,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/img/home-bckg.png");
     background-size: cover;
     margin-top: -111px;
-    height: 1021px;
+    height: 920px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,7 @@
     margin-top: 310px;
 }
 
-#booking-button{
+.booking-button{
     width: 420px;
     height: 80px;
     border-radius: 10px;
@@ -128,7 +128,7 @@
     padding: 31px 55px 53px 27px;
 }
 
-#right-arrow-reviews {
+#left-arrow-reviews {
     transform: rotate(180deg);
 }
 
@@ -151,6 +151,99 @@
     line-height: 100%;
 }
 
+.reviews-rectangle-column > p{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    width: 459px;
+}
+
+.reviews-rectangle-column-stars{
+    display: flex;
+}
+
+#more-reviews-button{
+    display: none;
+}
+
+/* ----------------hours----------------- */
+
+#hours-section{
+    display: flex;
+    height: 701px;
+}
+
+#hours-section > div {
+    flex: 50%;
+}
+
+#hours-photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#text-hours{
+    padding-top: 179px;
+    padding-left: 182px;
+}
+
+#main-text-hours{
+    width: 464px;
+    margin-bottom: 50px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* ----------------footer----------------- */
+
+footer{
+    background-color: #121212;
+    color: #FFFFFF;
+    display: flex;
+    height: 212px;
+    padding-top: 50px;
+    justify-content: space-between;
+    padding: 50px 174px 0px 323px;
+}
+
+footer > h2{
+    font-family: "Bona Nova", serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+}
+
+#footer-column{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: end;
+}
+
+#footer-column > p{
+    font-family: "PT Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+#social-network{
+    display: flex;
+    gap: 20px;
+}
+
+#social-network{
+    height: 30px;
+}
+
+#social-network > img {
+    height: 100%;
+}
+
 /* ----------------media----------------- */
 
 @media (max-width: 768px) {
@@ -170,7 +263,7 @@
         font-weight: 700;
     }
 
-    #booking-button{
+    .booking-button{
         width: 300px;
         height: 55px;
         font-size: 18px;
@@ -191,6 +284,8 @@
         font-weight: 500;
         margin-top: 20px;
     }
+
+    /* ----------------gallery media----------------- */
 
     #gallery{
         flex-direction: column;
@@ -233,4 +328,81 @@
         padding: 6px 9px;
     }
 
+    /* ----------------reviews media----------------- */
+
+    #reviews-section{
+        height: 660px;
+        width: 100%;
+        padding: 31px 30px 35px 30px;
+    }
+
+    #reviews-section-content > h2{
+        font-size: 28px;
+        margin-left: -195px;
+        margin-bottom: 20px;
+    }
+
+    #reviews-rectangle-2{
+        display: none;
+    }
+
+    .reviews-rectangle{
+        height: 465px;
+        width: 300px;
+        display: flex;
+        gap: 13px;
+        padding: 26px 17px 29px 23px;
+    }
+
+    .reviews-rectangle-title{
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    #reviews-avatar{
+        width: 90px;
+        height: 90px;
+        border-radius: 55px;
+    }
+
+    .reviews-rectangle-title > h3 {
+        font-size: 20px;
+        width: 126px;
+    }
+
+    .reviews-rectangle-column-stars > img{
+        width: 26.44px;
+    }
+
+    .reviews-rectangle-column > p{
+        width: 250px;
+        position: relative;
+        left: -100px;
+    }
+
+    .arrow-btn-reviews{
+        display: none;
+    }
+
+    #reviews-section-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #more-reviews-button{
+        display: block;
+        background-color: transparent;
+        border: 2px solid #FFFFFF;
+        width: 204px;
+        height: 55px;
+        border-radius: 100px;
+        font-family: "PT Sans", sans-serif;
+        font-size: 18px;
+        color: #FFFFFF;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+
+    /* ----------------reviews media----------------- */
 }
