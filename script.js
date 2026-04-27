@@ -53,3 +53,84 @@ leftArrow.onclick = function(){
     }
     updateContent(index, dataGallery);
 }
+
+
+const reviewsTitle = document.getElementById('reviews-title');
+const reviewsTitle2 = document.getElementById('reviews-title-2');
+const reviewsText = document.getElementById('reviews-text');
+const reviewsText2 = document.getElementById('reviews-text-2');
+const reviewsAvatar = document.getElementById('reviews-avatar');
+const reviewsAvatar2 = document.getElementById('reviews-avatar-2');
+const reviewsLeftArrow = document.getElementById('left-arrow-reviews');
+const reviewsRightArrow = document.getElementById('right-arrow-reviews');
+
+
+
+const dataReviews = [
+    {
+        img: 'assets/reviews/reviewNatalya.png',
+        title: 'Наталья Иванова',
+        text: 'Посетили семейный ресторан вместе с мужем и детьми — отличное место для семейного ужина! Обстановка очень уютная, а обслуживание выше всяких похвал. Наши дети в восторге от детского меню, которое оказалось не только вкусным, но и заботливо подготовленным с учетом детских предпочтений. Будем рекомендовать всем друзьям и обязательно вернемся.'
+    },
+    {
+        img: 'assets/reviews/reviewAleksandr.png',
+        title: 'Александр Петров',
+        text: '«Этот ресторан — настоящая находка! Проводил здесь деловой ужин с партнерами, и все остались в восторге. Обслуживание на высшем уровне, персонал внимателен к каждой детали. Кухня порадовала своим разнообразием. Отличное место для деловых встреч и ужинов в уютной обстановке. Рекомендую!'
+    },
+    {
+        img: 'assets/reviews/reviewIgor.png',
+        title: 'Игорь Ковалев',
+        text: '«Провели здесь день рождения — атмосфера просто великолепная. Персонал веселый и отзывчивый, кухня порадовала. Особенно понравились закуски к пиву! Обязательно будем возвращаться, чтобы попробовать все блюда из меню.'
+    },
+    {
+        img: 'assets/reviews/reviewMarina.png',
+        title: 'Марина Соколова',
+        text: '«Посетили семейный ресторан с подругами на девичнике, и это был наш лучший выбор! У нас был волшебный вечер — вкусная еда, отличные коктейли и веселая атмосфера. Обязательно вернемся сюда с мужьями! Очень рекомендую для дружеских посиделок и праздников.'
+    }
+];
+
+let reviewsIndex = 0;
+
+function reviewsUpdateContent(reviewsIndex, dataReviews) {
+    reviewsAvatar.classList.add('hidden');
+    reviewsAvatar2.classList.add('hidden');
+    reviewsTitle.classList.add('hidden');
+    reviewsTitle2.classList.add('hidden');
+    reviewsText.classList.add('hidden');
+    reviewsText2.classList.add('hidden');
+
+    setTimeout(() => {
+        let currentData = dataReviews[reviewsIndex];
+        let nextIndex = (reviewsIndex + 1) % dataReviews.length;
+        let pastData = dataReviews[nextIndex];
+        reviewsAvatar.src = currentData.img;
+        reviewsAvatar2.src = pastData.img;
+        reviewsTitle.innerHTML = currentData.title;
+        reviewsTitle2.innerHTML = pastData.title;
+        reviewsText.innerHTML = currentData.text;
+        reviewsText2.innerHTML = pastData.text;
+
+        reviewsAvatar.classList.remove('hidden');
+        reviewsAvatar2.classList.remove('hidden');
+        reviewsTitle.classList.remove('hidden');
+        reviewsTitle2.classList.remove('hidden');
+        reviewsText.classList.remove('hidden');
+        reviewsText2.classList.remove('hidden');
+    }, 500);
+}
+
+reviewsRightArrow.onclick = function(){
+    reviewsIndex++;
+    if (reviewsIndex >= dataReviews.length){
+        reviewsIndex = 0; 
+    }
+    reviewsUpdateContent(reviewsIndex, dataReviews);
+}
+
+reviewsLeftArrow.onclick = function(){
+    reviewsIndex--;
+    if (reviewsIndex < 0){
+        reviewsIndex = dataReviews.length-1; 
+    }
+    reviewsUpdateContent(reviewsIndex, dataReviews);
+}

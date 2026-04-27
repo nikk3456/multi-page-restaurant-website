@@ -12,7 +12,7 @@
 
     </head>
     <body>
-        <div class="container hero-section">
+        <div class="container hero">
             <nav>
                 <h1 id="title">ЭКЛЕКТИКА</h1>
                 <input id="checkbox-menu" type="checkbox">
@@ -61,16 +61,16 @@
                         </div>
                     </div>
                 </section>
-                <section id="reviews-section">
-                    <div id="reviews-section-content">
+                <section id="reviews">
+                    <div id="reviews-content">
                         <h2>Отзывы</h2>
                         <div id="reviews-line">
                             <img id="left-arrow-reviews" class="arrow-btn-reviews" src="assets/svg/big-right-arrow.svg">
                             <div class="reviews-rectangle">
-                                <img id="reviews-avatar" src="assets/reviews/reviewNatalya.png">
+                                <img class="reviews-avatar" id="reviews-avatar" src="assets/reviews/reviewNatalya.png">
                                 <div class="reviews-rectangle-column">
                                     <div class="reviews-rectangle-title">
-                                        <h3>Наталья Иванова</h3>
+                                        <h3 id="reviews-title">Наталья Иванова</h3>
                                         <div class="reviews-rectangle-column-stars">
                                             <img src="assets/svg/star.svg">
                                             <img src="assets/svg/star.svg">
@@ -79,14 +79,14 @@
                                             <img src="assets/svg/star.svg">
                                         </div>
                                     </div>
-                                    <p>Посетили семейный ресторан вместе с мужем и детьми — отличное место для семейного ужина! Обстановка очень уютная, а обслуживание выше всяких похвал. Наши дети в восторге от детского меню, которое оказалось не только вкусным, но и заботливо подготовленным с учетом детских предпочтений. Будем рекомендовать всем друзьям и обязательно вернемся.</p>
+                                    <p id="reviews-text-">Посетили семейный ресторан вместе с мужем и детьми — отличное место для семейного ужина! Обстановка очень уютная, а обслуживание выше всяких похвал. Наши дети в восторге от детского меню, которое оказалось не только вкусным, но и заботливо подготовленным с учетом детских предпочтений. Будем рекомендовать всем друзьям и обязательно вернемся.</p>
                                 </div>
                             </div>
                             <div id="reviews-rectangle-2" class="reviews-rectangle">
-                                <img id="reviews-avatar" src="assets/reviews/reviewAleksandr.png">
+                                <img class="reviews-avatar" id="reviews-avatar-2" src="assets/reviews/reviewAleksandr.png">
                                 <div class="reviews-rectangle-column">
                                     <div class="reviews-rectangle-title">
-                                        <h3>Александр Петров</h3>
+                                        <h3 id="reviews-title-2">Александр Петров</h3>
                                         <div class="reviews-rectangle-column-stars">
                                             <img src="assets/svg/star.svg">
                                             <img src="assets/svg/star.svg">
@@ -95,7 +95,7 @@
                                             <img src="assets/svg/star.svg">
                                         </div>
                                     </div>
-                                    <p>Этот ресторан — настоящая находка! Проводил здесь деловой ужин с партнерами, и все остались в восторге. Обслуживание на высшем уровне, персонал внимателен к каждой детали. Кухня порадовала своим разнообразием. Отличное место для деловых встреч и ужинов в уютной обстановке. Рекомендую!</p>
+                                    <p id="reviews-text-2">Этот ресторан — настоящая находка! Проводил здесь деловой ужин с партнерами, и все остались в восторге. Обслуживание на высшем уровне, персонал внимателен к каждой детали. Кухня порадовала своим разнообразием. Отличное место для деловых встреч и ужинов в уютной обстановке. Рекомендую!</p>
                                 </div>
                             </div>
                             <img id="right-arrow-reviews" class="arrow-btn-reviews" src="assets/svg/big-right-arrow.svg">
@@ -103,12 +103,10 @@
                         <button id="more-reviews-button">Показать еще</button>
                     </div>
                 </section>
-                <section id="hours-section">
-                    <div id="hours-section-left">
-                        <img id="hours-photo" src="assets/gallery/gallery_values.png">
-                    </div>
+                <section id="hours">
+                    <img id="photo-hours" src="assets/gallery/gallery_values.png">
                     <div id="text-hours">
-                        <p id="main-text-hours">
+                        <p>
                             <b>Мы открыты:</b>
                             </br>
                             </br>
@@ -123,7 +121,7 @@
                             </br>
                             +7 (911) 000-00-80
                         </p>
-                        <button class="booking-button">Забронировать онлайн</button>
+                        <button class="booking-button" id="booking-button-hours">Забронировать онлайн</button>
                     </div>
                 </section>
             </main>
