@@ -5,6 +5,10 @@ const leftArrow = document.getElementById('left-arrow');
 const rightArrow = document.getElementById('right-arrow');
 
 
+function isMobile(){
+    return window.innerWidth <= 768;
+}
+
 
 const dataGallery = [
     {
@@ -89,6 +93,17 @@ const dataReviews = [
     }
 ];
 
+
+//мобилка
+
+// function createReviewBlock(review){
+//     let reviewDiv = '<div class="reviews-rectangle"><img class="reviews-avatar" src=" ' + review.img + '"><div class="reviews-rectangle-column"><div class="reviews-rectangle-title"><h3>' + review.title + '</h3><div class="reviews-rectangle-column-stars"><img src="assets/svg/star.svg"><img src="assets/svg/star.svg"><img src="assets/svg/star.svg"><img src="assets/svg/star.svg"><img src="assets/svg/star.svg"></div></div><p>' + review.text + '</p></div>';
+//     const temp = document.createElement('div');
+//     temp.innerHTML = reviewDiv;
+//     return temp.firstElementChild;
+// }
+//-----------------------------------------
+
 let reviewsIndex = 0;
 
 function reviewsUpdateContent(reviewsIndex, dataReviews) {
@@ -134,3 +149,4 @@ reviewsLeftArrow.onclick = function(){
     }
     reviewsUpdateContent(reviewsIndex, dataReviews);
 }
+

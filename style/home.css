@@ -151,6 +151,10 @@
     line-height: 100%;
 }
 
+.reviews-rectangle-column{
+    width: 49px;
+}
+
 .reviews-rectangle-column > p{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
@@ -190,56 +194,14 @@
 }
 
 #text-hours > p{
-    width: 464px;
+    width: 255px;
     margin-bottom: 50px;
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     font-weight: 400;
 }
 
-/* ----------------footer----------------- */
 
-footer{
-    background-color: #121212;
-    color: #FFFFFF;
-    display: flex;
-    height: 212px;
-    padding-top: 50px;
-    justify-content: space-between;
-    padding: 50px 174px 0px 323px;
-}
-
-footer > h2{
-    font-family: "Bona Nova", serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: 0.1em;
-}
-
-#footer-column{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: end;
-}
-
-#footer-column > p{
-    font-family: "PT Sans", sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 125%;
-}
-
-#social-network{
-    display: flex;
-    gap: 20px;
-    height: 30px;
-}
-
-#social-network > img {
-    height: 100%;
-}
 
 /* ----------------media----------------- */
 
@@ -428,43 +390,5 @@ footer > h2{
         font-size: 20px;
         line-height: 124%;
         margin-bottom: 28px;
-    }
-
-    /* ----------------footer media----------------- */
-
-    footer{
-        width: 100%;
-        height: 260px;
-        padding: 0;
-        flex-direction: column;
-        padding: 45px 0px 64px 30px;
-    }
-    
-    footer > h2{
-        font-size: 16px;
-    }
-
-    #footer-column > p{
-        font-size: 16px;
-        line-height: 125%;
-        margin-bottom: 0px;
-    }
-
-    #footer-column{
-        gap: 12px;
-        align-items: start;
-    }
-
-    #footer-column > p{
-        font-size: 16px;
-    }
-
-    #social-network{
-        display: flex;
-        gap: 15px;
-    }
-
-    #social-network{
-        height: 20px;
     }
 }

@@ -1,0 +1,42 @@
+body {
+    background-color: #FFFFFF;
+}
+
+nav{
+    background-color: rgb(0, 0, 0);
+}
+
+#booking, #contacts{
+    display: flex;
+}
+
+#booking > img{
+    width: 950px;
+    height: 890px;
+}
+
+#booking > div{
+    width: 50.5%;
+    padding: 131px 323px 132px 182px;
+}
+
+#booking > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#contacts > div{
+    width: 49.5%;
+    margin: 102px 162px 102px 323px;
+    max-width: 465px;
+}
+
+#contacts-h3{
+    margin-bottom: 69px;
+}

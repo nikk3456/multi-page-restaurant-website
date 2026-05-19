@@ -1,0 +1,179 @@
+body {
+    background-image: url(../assets/img/page-bckg.png);
+    background-size: cover;
+}
+
+#top-line{
+    padding-top: 79px;
+    padding-left: 323px;
+}
+
+.top-line-left-button{
+    height: 46px;
+    padding: 10px 32px;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 20px;
+    margin-top: 23px;
+}
+
+#menu-position-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 93px;
+    margin: 130px auto 258px auto;
+    max-width: 1400px;
+}
+
+#online-booking-button{
+    position: absolute;
+    right: 0;
+    height: 93px;
+    width: 299px;
+    padding-left: 33px;
+    background-color: #E76020;
+    color: #FFFFFF;
+    font-family: "PT Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: start;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.menu-position{
+    background-color: #FFFFFF;
+    width: 590px;
+    height: 674px;
+    overflow: hidden;
+}
+
+.menu-position img {
+    width: 100%;
+    height: 463px;
+    object-fit: cover;
+}
+
+.menu-position-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 45px 25px 48px;
+}
+
+.menu-position-text-1{
+    max-width: 370px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 110%;
+    color: #000000;
+}
+
+.menu-position-text-2{
+    font-family: "PT Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #000000;
+}
+
+.more-button{
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    height: 80px;
+    border-radius: 10px;
+    border: solid #E76020;
+    background-color: #E76020;
+    font-family: "PT Sans", sans-serif;
+    font-size: 27.7px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+
+/* ----------------media----------------- */
+
+@media (max-width: 768px) {
+    #top-line {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-top: 43px;
+        gap: 16px;
+    }
+    
+    .top-line-left-button{
+        max-width: fit-content;
+        font-size: 14px;
+        margin: 0px;
+        padding: 0 27px;
+    }
+
+    #online-booking-button{
+        right: 9px;
+        height: 86px;
+        width: 86px;
+        padding-left: 0;
+        font-size: 0;
+        text-align: left;
+        border-radius: 50px;
+        padding-left: 15px;
+    }
+
+    #online-booking-button::before{
+        content: 'ОНЛАЙН-\AБРОНЬ';
+        font-size: 12px;
+    }
+
+    .menu-position{
+        width: 300px;
+        height: 348px;
+    }
+
+    .menu-position > div{
+        height: 117px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu-position img {
+        width: 100%;
+        height: 228.07px;
+    }
+
+    #menu-position-content{
+        gap: 30px;
+        margin: 44.6px auto 29px auto;
+    }
+
+    .menu-position-text{
+        padding: 12px 23px 0 24px;
+    }
+
+    .menu-position-text-1{
+        max-width: 370px;
+        font-size: 14px;
+        margin-right: 2px;
+    }
+
+    .menu-position-text-2{
+        font-size: 13.79px;
+    }
+
+    .more-button{
+        margin-bottom: 17.6px;
+        width: 273px;
+        height: 39.5px;
+        font-size: 13.64px;
+    }
+}
