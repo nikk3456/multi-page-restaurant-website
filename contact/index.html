@@ -34,21 +34,34 @@
                 </div>
             </nav>
             <main>
+                <section id="intro"></section>
                 <section id="booking">
                     <img src="../assets/img/sq.jpg">
                     <div>
-                        <h3>Бронирование столикав ресторане «Эклектика»</h3>
-                        <p>Заполните форму ниже, чтобы зарезервировать столик у нас в ресторане. Мы будем ждать вас!</p>
+                        <h3 id="booking-h3">Бронирование столиков в ресторане «ЭКЛЕКТИКА»</h3>
+                        <p id="booking-p">Заполните форму ниже, чтобы зарезервировать столик у нас в ресторане. Мы будем ждать вас!</p>
                         <form>
-                            ......
-                            <button>Забронировать</button>
+                            <input type="text" placeholder="Имя">
+                            <input type="tel" placeholder="Телефон">
+                            <input type="email" placeholder="Почта">
+                            <div>
+                                <button class="guests-button"><img class="guests-button-img" src="../assets/img/min.png"></button>
+                                <span>1</span>
+                                <button class="guests-button"><img class="guests-button-img" src="../assets/img/plus.png"></button>
+                                <label>Количество гостей</label>
+                                <select></select>
+                            </div>
+                            <input type="text" placeholder="Пожелания">
+                            <button id="booking-button">Забронировать</button>
                         </form>
                     </div>
                 </section>
                 <section id="contacts">
+                    <iframe id="iframe-media" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0eaf911303ebc9ba9ed9ba10dc5fababc017512eb0811d73e80b8dd25c62c32e&amp;source=constructor" width="360" height="265" frameborder="0"></iframe>
                     <div>
                         <h3 id="contacts-h3">Мы ценим, что вы выбрали наш ресторан и обещаем сделать ваш визит незабываемым!</h3>
-                        <p>
+                        <h3 id="contacts-h3-media">Мы ценим ваш выбор нашего ресторана и обещаем сделать ваш визит незабываемым!</h3>
+                        <p id="contacts-p">
                             <b>Мы открыты:</b>
                             </br>
                             </br>
@@ -64,7 +77,7 @@
                             +7 (911) 000-00-80
                         </p>
                     </div>
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0eaf911303ebc9ba9ed9ba10dc5fababc017512eb0811d73e80b8dd25c62c32e&amp;source=constructor" width="970" height="612" frameborder="0"></iframe>
+                    <iframe id="iframe-pc" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0eaf911303ebc9ba9ed9ba10dc5fababc017512eb0811d73e80b8dd25c62c32e&amp;source=constructor" width="970" height="612" frameborder="0"></iframe>
                 </section>
             </main>
             <footer>

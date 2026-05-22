@@ -11,7 +11,7 @@ body{
 nav{
     width: 100%;
     display: flex;
-    color: #FFFFFF;
+    color: var(--base-white);
     position: relative; 
     z-index: 999; 
     background-color: rgb(0, 0, 0, 0.6);
@@ -39,11 +39,11 @@ nav > h1 {
     font-family: "PT Sans", sans-serif;
     font-size: 20px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: var(--base-white);
 }
 
 .nav-link.active{
-    color: #9E9E9E;
+    color: var(--light-2);
 }
 
 #checkbox-menu, #menu-container-phone{
@@ -82,8 +82,8 @@ label[for="checkbox-menu"]{
 /* ----------------footer----------------- */
 
 footer{
-    background-color: #121212;
-    color: #FFFFFF;
+    background-color: var(--black-2);
+    color: var(--base-white);
     display: flex;
     height: 212px;
     padding-top: 50px;
