@@ -150,3 +150,23 @@ reviewsLeftArrow.onclick = function(){
     reviewsUpdateContent(reviewsIndex, dataReviews);
 }
 
+const saleBtn = document.getElementById('sale');
+const popup = document.getElementById('pop-ap-sale');
+const closeBtn = document.querySelector('#pop-ap-sale > button');
+const overlay = document.getElementById('overlay');
+
+function openPopup(){
+    popup.style.display = 'flex';
+    overlay.style.display = 'block';
+    body.style.overflow = 'hidden';
+    saleBtn.style.display = 'none';
+}
+
+function closePopup(){
+    popup.style.display = 'none';
+    overlay.style.display = 'none';
+    body.style.overflow = ''; 
+}
+
+saleBtn.onclick = openPopup;
+closeBtn.onclick = closePopup;

@@ -22,8 +22,35 @@ body {
     margin-top: 23px;
 }
 
+#content-button{
+    color: var(--black-3);
+    background-color: var(--base-white);
+}
+
+.more-button:active, #online-booking-button:active{
+    background-color: var(--orange-2);
+}
+
 #menu-position-content{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 93px;
+    margin: 130px auto 258px auto;
+    max-width: 1400px;
+}
+
+#menu-position-content-2{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 93px;
+    margin: 130px auto 258px auto;
+    max-width: 1400px;
+}
+
+#menu-position-content-3{
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
     gap: 93px;
@@ -37,13 +64,13 @@ body {
     height: 93px;
     width: 299px;
     padding-left: 33px;
+    padding-top: 18px;
     background-color: var(--base-orange);
     color: var(--base-white);
     font-family: "PT Sans", sans-serif;
     font-size: 24px;
     font-weight: 700;
     text-align: start;
-    border: none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -151,7 +178,7 @@ body {
         height: 228.07px;
     }
 
-    #menu-position-content{
+    #menu-position-content, #menu-position-content-2, #menu-position-content-3{
         gap: 30px;
         margin: 44.6px auto 29px auto;
     }

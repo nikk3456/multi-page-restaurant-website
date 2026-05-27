@@ -103,6 +103,10 @@ input::placeholder, label {
     color: var(--base-white);
 }
 
+#booking-button:active{
+    background-color: var(--orange-2);
+}
+
 #contacts > div{
     width: 49.5%;
     margin: auto 162px auto 323px;
